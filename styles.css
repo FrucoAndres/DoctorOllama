@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Roboto como la fuente principal, con fallback a sans-serif */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.header {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* También aplicamos la fuente Roboto al header */
+}
+
+
+.chat-container {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 550px;
+    height: 450px;
+    margin: 20px auto; /* Centrar en la página */
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.caja-mensaje {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px; /* Cambiado de margin-right a margin-left */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chat-box input[type="text"] {
+    flex-grow: 1; /* Que ocupe todo el espacio disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.chat-box button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-box button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+.message {
+    margin-bottom: 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.user-message {
+    background-color: #DCF8C6;
+    float: right;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.doctor-message {
+    background-color: #C2DFFF;
+    float: left;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+
+
+.imagen-logo img {
+    width: 50px !important; /* Ancho de la imagen */
+    height: 50px !important; /* Altura de la imagen */
+}
+
+.imagen-logo,
+h1 {
+    display: inline-block;
+    vertical-align: middle; /* Alinear verticalmente los elementos */
+}
+
